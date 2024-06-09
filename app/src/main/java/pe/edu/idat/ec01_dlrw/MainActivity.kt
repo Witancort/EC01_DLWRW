@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             EC01_DLRWTheme {
-                PromedioPracticasScreen()
+                Tiempo()
             }
         }
     }

@@ -19,12 +19,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun PromedioPracticasScreen() {
+fun PromedioPracticas() {
     var practica1 by rememberSaveable { mutableStateOf("") }
     var practica2 by rememberSaveable { mutableStateOf("") }
     var practica3 by rememberSaveable { mutableStateOf("") }
     var practica4 by rememberSaveable { mutableStateOf("") }
-    var resultado by rememberSaveable { mutableStateOf("Esperando resultados...") }
+    var resultado by rememberSaveable { mutableStateOf("") }
 
     Box(
         modifier = Modifier
@@ -37,7 +37,7 @@ fun PromedioPracticasScreen() {
                 .padding(horizontal = 16.dp)
         ) {
             Text(
-                text = "Promedio de Prácticas",
+                text = "Promedio Prácticas",
                 textAlign = TextAlign.Center,
                 modifier = Modifier.fillMaxWidth().padding(vertical = 16.dp),
                 style = TextStyle(
