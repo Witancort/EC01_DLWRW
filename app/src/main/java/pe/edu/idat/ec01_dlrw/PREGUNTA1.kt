@@ -33,7 +33,7 @@ fun Salario() {
                 .padding(horizontal = 16.dp)
         ) {
             Text(
-                text = "Cálculo de Salario Semanal",
+                text = "Cálculo Salario ",
                 textAlign = TextAlign.Center,
                 modifier = Modifier.fillMaxWidth().padding(vertical = 16.dp),
                 style = TextStyle(
@@ -75,14 +75,14 @@ fun MySpace(espacio: Int) {
 }
 
 fun calcularSalario(horasTrabajadas: Int): String {
-    val horasNormales = 40
-    val salarioNormal = 16
-    val salarioExtra = 20
+    var horasNormales = 40
+    var salarioNormal = 16
+    var salarioExtra = 20
 
-    val salarioTotal = if (horasTrabajadas <= horasNormales) {
+    var salarioTotal = if (horasTrabajadas <= horasNormales) {
         horasTrabajadas * salarioNormal
     } else {
-        val horasExtras = horasTrabajadas - horasNormales
+        var horasExtras = horasTrabajadas - horasNormales
         (horasNormales * salarioNormal) + (horasExtras * salarioExtra)
     }
 
